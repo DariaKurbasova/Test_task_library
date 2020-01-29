@@ -1,0 +1,25 @@
+<link href="{{ asset('css/style.css') }}" rel="stylesheet"/>
+<h1>Библиотека</h1>
+
+<table id="booksList">
+    <thead>
+    <th>Название</th>
+    <th>Автор</th>
+    <th>Год издания</th>
+    {% if (books) %}
+    <th></th>
+    {% endif %}
+    </thead>
+    <tbody>
+    {% for book in books %}
+        <tr>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.year }}</td>
+            <td><a href="/edit/{{ book.id }}">Редактировать</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<a href="/create" id="addBook">Добавить книгу</a>

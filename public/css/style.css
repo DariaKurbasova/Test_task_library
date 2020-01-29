@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-left: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 500px;
+}
+
+label, input, button {
+    font-size: 24px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td, th, #addBook {
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#addBook {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    text-decoration: none;
+    border-radius: 10px;
+}
