@@ -1,5 +1,6 @@
 h1 {
     text-align: center;
+    color: #00004b;
 }
 
 form {
@@ -10,10 +11,12 @@ label {
     display: inline-block;
     width: 150px;
     margin-bottom: 10px;
+    color: #00004b;
 }
 
 input {
     width: 500px;
+    color: #00004b;
 }
 
 label, input, button {
@@ -25,6 +28,18 @@ table {
     margin: auto;
 }
 
+#booksList thead {
+    background-color: rgba(102, 51, 153, 0.61);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(183, 192, 246, 0.51);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(184, 163, 231, 0.51);
+}
+
 td, th, #addBook {
     border: 1px solid black;
     padding: 5px 10px;
@@ -32,10 +47,55 @@ td, th, #addBook {
     text-align: center;
 }
 
+#booksList td a {
+    text-decoration: none;
+    color: #00004b;
+    font-style: italic;
+}
+
 #addBook {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     width: 200px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 7px;
+    color: #00004b;
+    background-color: rgba(174, 217, 232, 0.5);
+    box-shadow: inset 0 0 10px 2px #95b1d3;
+}
+
+#addBook:hover {
+    background-color: rgba(160, 208, 209, 0.5);
+    box-shadow: inset 0 0 10px 2px #8ea8ca;
+}
+
+#addBook:active {
+    background-color: rgba(151, 197, 209, 0.58);
+    box-shadow: inset 0 0 10px 2px #86a1c1;
+}
+
+button {
+    display: block;
+    text-decoration: none;
+    border-radius: 7px;
+    color: #00004b;
+    background-color: rgba(174, 217, 232, 0.5);
+    box-shadow: inset 0 0 10px 2px #95b1d3;
+    padding: 5px 15px;
+}
+
+button:hover {
+    background-color: rgba(160, 208, 209, 0.5);
+    box-shadow: inset 0 0 10px 2px #8ea8ca;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgba(151, 197, 209, 0.58);
+    box-shadow: inset 0 0 10px 2px #86a1c1;
+    outline: none;
+}
+
+button:focus {
+    outline: none;
 }
